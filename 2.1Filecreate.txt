@@ -1,0 +1,29 @@
+package com.test.oops;
+
+import java.io.File;
+import java.io.IOException;
+
+public class Filecreate2 {
+
+	public static void main(String[] args) {
+		try
+		{
+			File obj1 = new File("C:\\Users\\sivv2c18470\\Downloads\\programs\\14-3\\2.3File_empty.txt");
+			if(obj1.createNewFile())
+			{
+				System.out.println("File Successfully Created");
+			}
+			else
+			{
+				System.out.println("File Already Exists");
+			}
+		}
+		catch(IOException e)
+		{
+			System.out.println("Error Occured");
+			e.printStackTrace();
+		}
+		}
+
+}
+

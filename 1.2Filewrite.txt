@@ -1,0 +1,27 @@
+package com.test.oops;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileWrite {
+
+	public static void main(String[] args) {
+		try
+		{
+			FileWriter f = new FileWriter("C:\\Users\\sivv2c18470\\Downloads\\programs\\14-3\\1.5File_file.txt");
+			f.write("A paragraph is a group of words put together to form a group that is usually longer than a sentence. Paragraphs are often made up of several sentences. \r\n"
+					+ "There are usually between three and eight sentences. Paragraphs can begin with an indentation (about five spaces), or by missing a line out, and then starting again. \r\n"
+					+ "This makes it easier to see when one paragraph ends and another begins.\r\n"
+					+ "In most organized forms of writing, such as essays, paragraphs contain a topic sentence . \r\n"
+					+ "This topic sentence of the paragraph tells the reader what the paragraph will be about. \r\n"
+					+ "Essays usually have multiple paragraphs that make claims to support a thesis statement, which is the central idea of the essay.\r\n"
+					+ "Paragraphs may signal when the writer changes topics. Each paragraph may have a number of sentences, depending on the topic.");
+			f.close();
+			System.out.println("File has been Successfully Written");
+		}
+		catch(IOException e)
+		{
+			System.out.println("Error occured");
+		}
+	}
+}

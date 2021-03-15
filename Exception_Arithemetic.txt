@@ -1,0 +1,19 @@
+package com.test.oops;
+
+public class ArtimeticException {
+
+	public static void main(String[] args) {
+		try {
+			double k = 143 / 0;
+			System.out.println("the value of k: "+k);
+			}
+		catch(ArithmeticException e)
+		{
+			System.out.println(e);
+			System.out.println("Error");
+
+		}
+
+	}
+
+}

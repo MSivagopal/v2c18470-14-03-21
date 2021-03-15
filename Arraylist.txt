@@ -1,0 +1,40 @@
+package com.test.oops;
+
+import java.util.ArrayList;
+
+public class Arraylist {
+
+	public static void main(String[] args) {
+		ArrayList<String> employee = new ArrayList<String>();
+		employee.add("Ragulkumar");
+		employee.add("Sivaji");
+		employee.add("Soundarya");
+		employee.add("Shyaam");
+		employee.add("Supreeth");
+		System.out.println("Employee Details: " +employee);
+		
+		ArrayList<String> id = new ArrayList<String>();
+		id.add("It2024");
+		id.add("It2055");
+		id.add("It2014");
+		id.add("It2066");
+		id.add("It2008");
+		System.out.println("EmployeeID Details: " +id);
+		
+		employee.addAll(id);
+		System.out.println("Employee full details: "+employee);
+		
+		ArrayList<String> company = new ArrayList<String>();
+		company.add("SS Enterprise");
+		System.out.println("Comapany Name: " +company);
+		
+		employee.addAll(0, company);
+		System.out.println("Company Staff Details: " +employee);
+		
+		employee.removeAll(id);
+		System.out.println("Company Staff Details: " +employee);
+		
+		
+	}
+
+}
